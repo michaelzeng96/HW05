@@ -83,6 +83,8 @@ bool Vector<elementType>::empty() const
 {
 	if (vector_size == 0)
 		return true;
+	else
+		return false;
 }
 
 template <typename elementType>
@@ -96,8 +98,28 @@ void Vector<elementType>::clear()
 template <typename elementType>
 void Vector<elementType>::swap(Vector v2)
 {
-	elementType * pSwap = pArray;
-	pArray = v2&;
-	v2 &= pSwap;
+	if (this == &v2)
+		return;
+	else
+	{
+		int temp_size = vector_size;
+		int temp_capacity = vector_capacity;
+		elementType * pTemp = new elementType[vector_capacity];
+		for (int i = 0; i < vector_size; i++)
+			pTemp[i] = pArray[i];
+
+		vector_size = v2.vector_size;
+		vector_capacity = v2.vector_capacity;
+		pArray = v2.pArray;
+
+		v2.vector_size = temp_size;
+		v2.vector_capacity = temp_capacity;
+		v2.pArray = pTemp;
+
+		//After debugging/working on this for a couple hours, i have finally realized that I cannot
+		//switch the input object's stuff with the original objects because I am not passing by reference
+		//I can only give the input objects values to the origninal object
+
+	}
 }
 

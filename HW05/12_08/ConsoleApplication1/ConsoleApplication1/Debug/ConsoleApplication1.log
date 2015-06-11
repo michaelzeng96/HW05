@@ -1,11 +1,34 @@
-﻿Build started 6/10/2015 11:59:52 PM.
-     1>Project "F:\CS172\HW05\12_08\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+﻿Build started 6/11/2015 1:32:08 AM.
+     1>Project "F:\CS172\HW05\12_08\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Vector.cpp
+         Vector.cpp
          main.cpp
-     1>f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\main.cpp(10): error C2676: binary '[' : 'Vector<int>' does not define this operator or a conversion to a type acceptable to the predefined operator
-     1>Done Building Project "F:\CS172\HW05\12_08\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)) -- FAILED.
+     1>f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\vector.cpp(43): warning C4018: '<' : signed/unsigned mismatch
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\vector.cpp(35) : while compiling class template member function 'void Vector<int>::push_back(elementType)'
+                 with
+                 [
+                     elementType=int
+                 ]
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\main.cpp(10) : see reference to function template instantiation 'void Vector<int>::push_back(elementType)' being compiled
+                 with
+                 [
+                     elementType=int
+                 ]
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\main.cpp(7) : see reference to class template instantiation 'Vector<int>' being compiled
+     1>f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\vector.cpp(93): warning C4018: '<' : signed/unsigned mismatch
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\vector.cpp(92) : while compiling class template member function 'void Vector<int>::clear(void)'
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\main.cpp(16) : see reference to function template instantiation 'void Vector<int>::clear(void)' being compiled
+     1>f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\vector.cpp(108): warning C4018: '<' : signed/unsigned mismatch
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\vector.cpp(100) : while compiling class template member function 'void Vector<std::string>::swap(Vector<std::string>)'
+                 f:\cs172\hw05\12_08\consoleapplication1\consoleapplication1\main.cpp(24) : see reference to function template instantiation 'void Vector<std::string>::swap(Vector<std::string>)' being compiled
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\CS172\HW05\12_08\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\CS172\HW05\12_08\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\CS172\HW05\12_08\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\main.obj
+         Debug\Vector.obj
+         ConsoleApplication1.vcxproj -> F:\CS172\HW05\12_08\ConsoleApplication1\Debug\ConsoleApplication1.exe
+     1>Done Building Project "F:\CS172\HW05\12_08\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" (Rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.05
+Time Elapsed 00:00:11.77
